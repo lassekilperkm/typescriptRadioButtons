@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <metacharset="utf8">
+        <title>My TypeScript project</title>
+    </head>
+    <body>
+        <div id="main">
+            <script data-main="scripts/app" src="scripts/lib/require.js"></script>
+            <div id="formDiv">
+                <form name="rbForm" id="rbForm">
+                    <p>Manuell erstellt</p>                    
+                    <input type="radio" id="good" name="befinden" value="Gut">
+                    <label for="good"> Gut</label><br>
+                    <input type="radio" id="med" name="befinden" value="Naja">
+                    <label for="med"> Naja</label><br>
+                    <input type="radio" id="bad" name="befinden" value="Schlecht">
+                    <label for="bad"> Schlecht</label><br>
+                    <input type="text" id="mood" name="ausgabe" readonly>                    
+                </form>
+            </div>
+            <div id="json">
+                <input type="submit" value="Import" id="jsSubmit">                
+            </div>
+        </div>
+    </body>
+</html>
